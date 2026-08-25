@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "gose.active-app",
+  "name": "Active App",
+  "version": "1.0.0",
+  "author": "gose",
+  "license": "MIT",
+  "description": "Focused application icon and name for the Omarchy bar",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Active app",
+    "description": "Focused application icon and name",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "maxWidth": 180
+    },
+    "schema": [
+      {
+        "key": "maxWidth",
+        "type": "integer",
+        "label": "Maximum app-name width",
+        "min": 80,
+        "max": 400,
+        "step": 20,
+        "defaultValue": 180
+      }
+    ]
+  }
+}
